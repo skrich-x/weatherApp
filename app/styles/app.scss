@@ -1,0 +1,62 @@
+@import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
+
+$gutter: 0em;
+
+@import 'bower_components/neat/app/assets/stylesheets/neat';
+
+html{
+  background-color: RGBA(122, 140, 157, 1);
+}
+
+.app-container{
+  @include outer-container(500px);
+  height: 900px;
+  border: 3px solid RGBA(215, 210, 204, 1);
+  border-radius: 10px;
+}
+
+.current-location{
+  height: 100px;
+  border-bottom: 1px solid RGBA(215, 210, 204, 1);
+}
+
+.current-weather{
+  height: 400px;
+  border-bottom: 1px solid RGBA(215, 210, 204, 1);
+}
+
+.hourly-weather{
+  height: 150px;
+  border-bottom: 1px solid RGBA(215, 210, 204, 1);
+}
+
+.weekly-weather{
+  height: 175px;
+  border-bottom: 1px solid RGBA(215, 210, 204, 1);
+}
+
+.search-bar{
+  height: 75px;
+}
+/* <div class="app-container">
+  <header class = "location">
+    <h4>
+    </h4>
+  </header>
+  <div class="current-weather">
+    <div class="temperature-widget">
+
+    </div>
+  </div>
+  <div class="hourly-weather">
+
+
+
+  </div>
+  <div class="weekly-weather">
+
+  </div>
+  <div class="search-bar">
+
+  </div>
+</div> */
