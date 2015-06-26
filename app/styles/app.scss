@@ -4,6 +4,8 @@ $gutter: 0em;
 
 @import 'bower_components/neat/app/assets/stylesheets/neat';
 
+$font-family: 'Raleway', sans-serif;
+
 html{
   background-color: RGBA(122, 140, 157, 1);
 }
@@ -38,25 +40,3 @@ html{
 .search-bar{
   height: 75px;
 }
-/* <div class="app-container">
-  <header class = "location">
-    <h4>
-    </h4>
-  </header>
-  <div class="current-weather">
-    <div class="temperature-widget">
-
-    </div>
-  </div>
-  <div class="hourly-weather">
-
-
-
-  </div>
-  <div class="weekly-weather">
-
-  </div>
-  <div class="search-bar">
-
-  </div>
-</div> */
