@@ -4,11 +4,11 @@ module.exports = function(environment) {
   var ENV = {
     contentSecurityPolicy: {
       'default-src': "'self'",
-      'script-src': "'self' connect.soundcloud.com",
+      'script-src': "'self' api.forecast",
       'font-src': "'self' fonts.gstatic.com",
-      'connect-src': "'self'",
+      'connect-src': "'self' maps.googleapis.com",
       'img-src': "'self'",
-      'style-src': "'self' cdnjs.cloudflare.com maxcdn.bootstrapcdn.com fonts.googleapis.com",
+      'style-src': "'self' 'unsafe-inline' cdnjs.cloudflare.com maxcdn.bootstrapcdn.com fonts.googleapis.com",
       'media-src': "'self'"
     },
     modulePrefix: 'weather-app',
