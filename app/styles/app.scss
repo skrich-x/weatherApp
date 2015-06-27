@@ -16,9 +16,12 @@ h4{
   margin: 0 0 0 0;
 }
 
+ul{
+  list-style-type: none;
+}
 .app-container{
-  @include outer-container(500px);
-  height: 900px;
+  @include outer-container(980px);
+  height: 100%;
   border: 3px solid RGBA(215, 210, 204, 1);
   border-radius: 10px;
   position: relative;
@@ -32,12 +35,12 @@ h4{
   line-height: 100px;
   text-align: center;
   border-bottom: 1px solid RGBA(215, 210, 204, 1);
-  font-size: 2em;
+  font-size: 1.25em;
   text-shadow: 1px 1px 1px RGBA(215, 210, 204, 1);
 }
 
 .current-weather{
-  background-image: url('rain.gif');
+  background-image: url('sunny.gif');
   background-size: cover;
   background-repeat: no-repeat;
   position: 50% 50%;
@@ -45,8 +48,8 @@ h4{
   border-bottom: 1px solid RGBA(215, 210, 204, 1);
   box-shadow: 4px 18px 8px -8px RGBA(3, 3, 3, .5);
 }
-.temperature-widget{
-  line-height: 200px;
+.temperature-widget h1{
+  line-height: 100px;
   padding-top: 50px;
 }
 
@@ -63,7 +66,7 @@ h4{
   }
 
 .temp-icon h1{
-  font-size: 6em;
+  font-size: 3em;
 }
 
 .hourly-weather{
@@ -74,6 +77,10 @@ h4{
 .weekly-weather{
   height: 175px;
   border-bottom: 1px solid RGBA(215, 210, 204, 1);
+}
+
+.weekly-weather li{
+  display: inline-block;
 }
 
 .search-bar{

@@ -2,5 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName: 'section',
-  classNames: ['weather-main']
+  classNames: ['weather-main'],
+
 });

@@ -1,1 +1,13 @@
+<div class="weekly-weather">
+<h3 class="daily-forecast">Next Seven Days</h3>
+  <ul class="weather-forecast-daily">
+    {{#each daily as |daily|}}
+    <li class="daily-forecast">
+      <i class="wi wi-day-sunny-overcast daily-icon"></i>
+      <p class="high-temp">{{daily.temperatureMax}}</p>
+      <p class="low-temp">{{daily.temperatureMin}}</p>
+    </li>
+    {{/each}}
+  </ul>
+</div>
 {{yield}}
