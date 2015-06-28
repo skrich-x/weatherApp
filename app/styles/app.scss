@@ -7,7 +7,7 @@ $gutter: 0em;
 $font-family: 'Raleway', sans-serif;
 
 html{
-  background-color: #000000;
+  background-color: RGBA(215, 210, 204, 1);
 }
 h1,
 h2,
@@ -20,25 +20,29 @@ ul{
   list-style-type: none;
 }
 
-.app-container{
-  @include outer-container(980px);
-  height: 100%;
-  border: 3px solid RGBA(215, 210, 204, 1);
-  border-radius: 10px;
-  position: relative;
-  background: RGBA(88, 172, 230, .70);
-  overflow: hidden;
-  font-family: 'Raleway';
-}
-
 .current-location{
   height: 100px;
+  width: 100%;
   line-height: 100px;
   text-align: center;
   border-bottom: 1px solid RGBA(215, 210, 204, 1);
   font-size: 1.25em;
   text-shadow: 1px 1px 1px RGBA(215, 210, 204, 1);
 }
+
+
+.main-container{
+  @include outer-container(980px);
+  height: 100%;
+  border-right: 3px solid RGBA(88, 172, 230, .70);
+  border-left: 3px solid RGBA(88, 172, 230, .70);
+  border-radius: 10px;
+  position: relative;
+  background: RGBA(215, 210, 204, 1);
+  overflow: hidden;
+  font-family: 'Raleway';
+}
+
 
 .current-weather{
   background-image: url('sunny.gif');
