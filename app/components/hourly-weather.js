@@ -5,20 +5,24 @@ export default Ember.Component.extend({
   className: ['hourly-weather'],
 
   init: function() {
-    this.formatTime();
+
     this.getNextTwelveHours();
-		this._super();
+    this.formatTime();
+    this._super();
+
 	},
 
   getNextTwelveHours: function() {
-      var nextTwelveHours= this.get('hourly').slice(0, 12);
+      var nextTwelveHours= this.get('hourly.data').slice(0, 12);
       this.set('hourly', nextTwelveHours);
       console.log(nextTwelveHours);
-     },
+  },
 
-  formatTime: function(time){
-      var time = this.get('hourly.time');
+  formatTime: function(nextTwelveHours) {
+      var time = this.get('results.hourly.data.1.time');
       time = moment().format('llll');
       this.set('hourly.time', time);
+      console.log(time);
   },
+
 });

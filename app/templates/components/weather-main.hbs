@@ -4,12 +4,14 @@
 <section class='main-container'>
 <div class="current-weather">
   <div class="temperature-widget">
-    <span>HI</span>
       <div class="temp-icon">
+        <i class="wi {{todayConditionClass}} condition-icon"></i>
          <h1 class='temperature'>{{current.temperature}}<span>&deg;</span></h1>
       </div>
     <h3 class="summary">{{current.summary}}</h3>
     <h3 class="current-time">{{current.time}}</h3>
+    <h3 class='current-precip-probablitly'>{{current.precipProbability}}%</h3>
+    <h3 class='precip-type'>{{precipType}}</h3>
   </div>
 </div>
 </section>

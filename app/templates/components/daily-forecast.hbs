@@ -3,7 +3,7 @@
   <ul class="weather-forecast-daily">
     {{#each daily as |daily|}}
     <li class="daily-forecast">
-      <i class="wi wi-day-sunny-overcast daily-icon"></i>
+      <i class="wi {{dailyConditionClass}} condition-icon"></i>
       <p class="high-temp">{{daily.temperatureMax}}</p>
       <p class="low-temp">{{daily.temperatureMin}}</p>
     </li>

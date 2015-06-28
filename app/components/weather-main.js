@@ -23,13 +23,23 @@ export default Ember.Component.extend({
      this.set('current.time', time);
    },
 
-  todaysCoditionIcon: function(){
-    var conditions = {
-      'clear-night': 'wi-'
-    };
+   todayConditionClass: function() {
+ 	  var conditions = {
+ 	    'clear-day': 'wi-day-sunny',
+ 	    'clear-night': 'wi-',
+ 	    'rain': 'wi-rain',
+ 	    'snow': 'wi-snow',
+ 	    'sleet': 'wi-rain-mix',
+ 	    'wind': 'wi-cloudy-gusts',
+ 	    'fog': 'wi-fog',
+ 	    'cloudy': 'wi-cloudy',
+ 	    'partly-cloud-day': 'wi-cloudy',
+ 	    'partly-cloudy-night': 'night-partly-cloudy',
 
-    return conditions[this.get('results.currently.icon')] || 'wi-day-sunny';
-  }.property('results.currently.icon')
+ 	  };
+ 	  return conditions[this.get('results.currently.icon')] || 'wi-day-sunny';
+     }.property('results.currently.icon'),
+
 
 
 });

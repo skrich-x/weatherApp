@@ -7,8 +7,9 @@ $gutter: 0em;
 $font-family: 'Raleway', sans-serif;
 
 html{
-  background-color: RGBA(215, 210, 204, 1);
+  background-color: RGBA(215, 210, 204, .25);
 }
+
 h1,
 h2,
 h3,
@@ -20,22 +21,24 @@ ul{
   list-style-type: none;
 }
 
+i{
+  color: RGBA(88, 172, 230, 1);
+}
 .current-location{
   height: 100px;
   width: 100%;
   line-height: 100px;
   text-align: center;
-  border-bottom: 1px solid RGBA(215, 210, 204, 1);
   font-size: 1.25em;
+  font-family: 'Raleway';
   text-shadow: 1px 1px 1px RGBA(215, 210, 204, 1);
+
 }
 
 
 .main-container{
-  @include outer-container(980px);
+  @include outer-container(1080px);
   height: 100%;
-  border-right: 3px solid RGBA(88, 172, 230, .70);
-  border-left: 3px solid RGBA(88, 172, 230, .70);
   border-radius: 10px;
   position: relative;
   background: RGBA(215, 210, 204, 1);
@@ -45,7 +48,6 @@ ul{
 
 
 .current-weather{
-  background-image: url('sunny.gif');
   background-size: cover;
   background-repeat: no-repeat;
   position: 50% 50%;
@@ -53,9 +55,11 @@ ul{
   border-bottom: 1px solid RGBA(215, 210, 204, 1);
   box-shadow: 4px 18px 8px -8px RGBA(3, 3, 3, .5);
 }
+
 .temperature-widget h1{
   line-height: 100px;
   padding-top: 50px;
+  font-family: 'Raleway';
 }
 
 .temp-icon{
@@ -65,31 +69,60 @@ ul{
   margin: 0 auto;
   padding: 2em;
   text-align: center;
-  border: 4px double RGBA(215, 210, 204, 1);
-  border-radius: 50%;
-  box-shadow: inset 0 0 125px RGBA(122, 140, 157, 1);
   }
 
 .temp-icon h1{
-  font-size: 3em;
+  font-size: 10em;
+  font-family: 'Raleway';
 }
 
-.hourly-weather{
+.temp-icon i {
+  font-size: 5em;
+}
+
+.hourly-weather-title{
+  font-family: 'Raleway';
+  text-align: center;
+  padding: 1em;
+}
+
+.weather-forecast-hourly{
   height: 150px;
   border-bottom: 1px solid RGBA(215, 210, 204, 1);
+  font-family: 'Raleway';
+
 }
 
 .weather-forecast-hourly li{
   display: inline-block;
+  padding-left: .5em;
 }
 
 .weekly-weather{
   height: 175px;
   border-bottom: 1px solid RGBA(215, 210, 204, 1);
+  font-family: 'Raleway';
 }
 
 .weekly-weather li{
   display: inline-block;
+}
+
+.daily-forecast{
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.weather-forecast-daily{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.daily-forecast i{
+  font-size: 2em;
 }
 
 .search-bar{
