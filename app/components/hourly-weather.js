@@ -13,6 +13,12 @@ export default Ember.Component.extend({
        var nextTwelveHours = this.get('hourly').slice(0, 12);
        this.set('hourly', nextTwelveHours);
        console.log(nextTwelveHours);
-     }
+     },
+
+  // tempSlice: function() {
+  //      var temp = this.get('hourly.temperature');
+  //          temp = temp.toString().slice(0,2);
+  //          this.set('hourly.temperature', temp);
+  //   }
 
 });
