@@ -62,6 +62,11 @@ i{
   font-family: 'Raleway';
 }
 
+.temperature-widget h3{
+  text-align: center;
+  padding-top: .5em;
+}
+
 .temp-icon{
   width: 50%;
   vertical-align: middle;
@@ -125,6 +130,12 @@ i{
   font-size: 2em;
 }
 
-.search-bar{
-  height: 75px;
+.search-bar input{
+  height: 40px;
+  width: 20%;
+  background-color: RGBA(215, 210, 204, .25);
+  border-bottom: 1px solid RGBA(88, 172, 230, 1);
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
