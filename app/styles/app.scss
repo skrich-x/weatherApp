@@ -139,3 +139,21 @@ i{
   border-right: none;
   border-left: none;
 }
+
+.search-bar input{
+  height: 40px;
+  width: 20%;
+  background-color: RGBA(215, 210, 204, .25);
+  border-bottom: 1px solid RGBA(88, 172, 230, 1);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.search-bar button{
+  height: 40px;
+  width: 5%;
+  background-color: RGBA(215, 210, 204, .25);
+  border: 1px solid RGBA(88, 172, 230, 1);
+
+}

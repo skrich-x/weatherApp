@@ -6,9 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-    this.route('index', {path: '/'});
-    this.route('weather', {path: 'weather/:lat/:lng'});
+  this.route('index', {path: '/'});
+  this.route('weather', {path: 'weather/:lat/:lng'});
 
+  this.route('search');
 });
 
 export default Router;
