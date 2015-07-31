@@ -1,0 +1,13 @@
+{{log model}}
+
+<div class="app-container">
+
+  {{weather-main current=model.currently}}
+
+  {{hourly-weather hourly=model.hourly}}
+
+  {{daily-forecast daily=model.daily.data}}
+
+</div>
+
+{{outlet}}
