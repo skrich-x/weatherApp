@@ -26,3 +26,14 @@ export default Ember.Component.extend({
   },
 
 });
+
+
+//tagName: 'li',
+//clssNames:[hourly-weather]
+
+//time: function(){
+  //return(new Date(this.get('hourly.time'))).getUTCHours();
+//}property('hourly.time')
+//}
+
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.format('h a')
