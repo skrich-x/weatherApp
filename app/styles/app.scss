@@ -6,6 +6,8 @@ $gutter: 0em;
 
 $font-family: 'Raleway', sans-serif;
 
+@import 'index.scss';
+
 html{
   background-color: RGBA(215, 210, 204, .25);
 }
