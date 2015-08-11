@@ -8,8 +8,13 @@ $font-family: 'Raleway', sans-serif;
 
 @import 'index.scss';
 
+
 html{
   background-color: RGBA(215, 210, 204, .25);
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 h1,
@@ -33,7 +38,7 @@ i{
   text-align: center;
   font-size: 1.25em;
   font-family: 'Raleway';
-  text-shadow: 1px 1px 1px RGBA(215, 210, 204, 1);
+  // text-shadow: 1px 1px 1px RGBA(215, 210, 204, 1);
 
 }
 
