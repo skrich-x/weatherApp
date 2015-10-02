@@ -1,0 +1,28 @@
+// html{
+//   background-image: url("../assets/sunny.gif");
+//   // no-repeat center center fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
+
+button{
+  margin: 1.5em;
+}
+
+.landing-container{
+  @include outer-container(1080px);
+  text-align: center;
+  font-family: 'Raleway';
+  background-color: RGBA(215, 210, 204, .25);
+  border-radius: 10px;
+  box-shadow:0 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.index-header{
+  margin-top:2em;
+  color: RGBA(88, 172, 230, 1);
+  padding: 1em;
+  font-size: 5em;
+}

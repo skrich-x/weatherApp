@@ -1,2 +1,10 @@
-{{link-to 'Get local weather' 'weather' model.latitude model.longitude}}
+<div class="landing-container">
+  <h1 class="index-header">Blue Sky Forecast</h1>
+  <p class="tag-line">Up to the Minute Weather Forecast Based on Your Current Location</p>
+
+  {{#link-to 'weather' model.latitude model.longitude}}
+        <button class="button-main" type="submit" name="button">Get local Weather</button>
+  {{/link-to}}
+
+</div>
 {{outlet}}
